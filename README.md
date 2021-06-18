@@ -18,3 +18,7 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"  
+git config --list
