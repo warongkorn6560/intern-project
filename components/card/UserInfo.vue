@@ -12,8 +12,8 @@
 export default {
   props: {
     card: {
-      type: Array,
-      default: () => []
+      type: Object,
+      default: null
     }
   }
 };
