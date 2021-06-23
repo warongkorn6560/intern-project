@@ -1,11 +1,14 @@
 <template>
   <div
-    class="w-36 h-56 rounded-md shadow-lg bg-gray-200 bg-opacity-50 p-4 hover:scale-110 transform duration-300"
+    class="w-40 h-56 text-center shadow-lg bg-white hover:scale-110 transform duration-300"
   >
-    <img src="/images/test-image.svg" />
-    <h4>{{ card.name }}</h4>
-    age {{ card.age }}
+    <img class="pb-5" src="/images/plant1.jpeg"/>
+    <h4>{{ card.img }}</h4>
+    {{ card.article }}
+     <n-link to="card.slug">
+    </n-link>
   </div>
+  
 </template>
 
 <script>
