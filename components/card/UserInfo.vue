@@ -1,10 +1,16 @@
 <template>
-  <div
-    class="w-36 h-56 rounded-md shadow-lg bg-gray-200 bg-opacity-50 p-4 hover:scale-110 transform duration-300"
-  >
-    <img src="/images/test-image.svg" />
-    <h4>{{ card.name }}</h4>
-    age {{ card.age }}
+  <div>
+    <n-link :to="card.slug">
+      <div
+        class="w-full  text-center shadow-lg bg-white hover:scale-105 transform duration-300"
+      >
+        <div
+          class="w-full"
+          :style="`background-image:url(${card.img});padding-bottom:50%;`"
+        />
+        <p class="py-8">{{ card.article }}</p>
+      </div>
+    </n-link>
   </div>
 </template>
 
